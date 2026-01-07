@@ -23,3 +23,7 @@ mudo-images/
 
 # Logs
 *.log
+
+# Scripts
+extract_pdf*.py
+
