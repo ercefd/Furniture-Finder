@@ -1,0 +1,25 @@
+# System files
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+backend/.env
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Dataset & Large Models
+mudo-images/
+
+
+# VS Code
+.vscode/
+
+# Logs
+*.log

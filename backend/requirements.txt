@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+torch
+torchvision
+transformers
+sentence-transformers
+faiss-cpu
+pymongo
+ultralytics
+pillow
+scikit-learn
+matplotlib
+numpy
+requests
+pydantic
+python-multipart
+# For SAM2 if needed, but sticking to standard deps for now
