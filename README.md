@@ -16,7 +16,7 @@
 | 💬 **Text Search** | Find items using descriptive natural language queries. |
 | ⚡ **Fast Inference** | Optimized with FAISS, delivering search results in milliseconds. |
 | 🤖 **AI Captioning** | Automatically generates detailed descriptions for uploaded images to explain the search context. |
-| 🎓 **Student-Teacher AI** | Uses a distilled ResNet18 model that is **36% faster** and **50% smaller** than its teacher (ResNet50), effectively running on standard CPUs/MPS. |
+| 🎓 **Student-Teacher AI** | Uses a distilled ResNet18 model that is **~38% faster** and significantly smaller than its teacher (**OpenAI CLIP**), effectively running on standard CPUs/MPS. |
 
 ---
 

@@ -123,7 +123,7 @@ async def search_by_text(q: str):
     for idx, dist in zip(indices, distances):
         if idx < len(image_paths):
             original_path = image_paths[idx]
-            rel_path = os.path.relpath(original_path, DATASET_DIR)
+            rel_path = os.path.basename(original_path)
             url = f"http://localhost:8000/images/{rel_path}"
             results.append({
                 "id": int(idx),
@@ -169,8 +169,9 @@ async def search_furniture(file: UploadFile = File(...)):
             # static mount: /images points to /Users/.../mudo-images
             # We need to extract the part relative to mudo-images
             
-            rel_path = os.path.relpath(original_path, DATASET_DIR)
-            # Ensure URL encoding if needed (simplified here)
+            # Use basename because stored paths might be relative/broken
+            # and we know images are served from DATASET_DIR flatly (or we assume flat for now)
+            rel_path = os.path.basename(original_path)
             url = f"http://localhost:8000/images/{rel_path}"
             
             results.append({
